@@ -1,5 +1,18 @@
 @import url();
 
+.skill{
+    background-color: rgb(136, 141, 146);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 60%;
+    margin-left: 20%;
+    
+}
+
+.skill:hover{
+    background-color: black;
+}
 
 .wrapper{
     background: #fff;
