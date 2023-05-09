@@ -1,11 +1,30 @@
 @import url();
+
+@keyframes example {
+    0%   {display: none;}
+    15%   {color:grey; left:0px; top:0px;}
+    25%  {color:orange; left:100px; top:0px;}
+    50%  {color:rgb(255, 255, 0); left:100px; top:100px;}
+    75%  {color:blue; left:0px; top:100px;}
+    100% {color:rgba(0, 0, 0, 0.237); left:0px; top:0px;}
+  }
+
+
+
 .skill{
     color: white;
     border-radius: 20px;
     cursor: pointer;
     width: 60%;
     margin-left: 20%;
-    
+
+    width: 100px;
+    height: 100px;
+    position: relative;
+    color: white;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-direction: reverse;
 }
 #html:hover{
     color: grey;
@@ -28,6 +47,12 @@
 
 .contact-title{
     margin-top: -5%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+
 }
 
 .wrapper{
