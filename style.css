@@ -1,7 +1,5 @@
 @import url();
-
 .skill{
-    background-color: rgb(33, 37, 41);
     color: white;
     border-radius: 20px;
     cursor: pointer;
@@ -9,9 +7,23 @@
     margin-left: 20%;
     
 }
-
-.skill:hover{
-    background-color: rgb(136, 141, 146);
+#html:hover{
+    color: grey;
+}
+#css:hover{
+    color:orange;
+}
+#javascript:hover{
+    color: rgb(255, 255, 0);
+}
+#php:hover{
+    color: blue;
+}
+#bootstrap:hover{
+    color: purple;
+}
+.bg-color{
+    background-color: black;
 }
 
 .wrapper{
@@ -26,7 +38,6 @@
 .wrapper header{
     font-size: 22px;
     font-weight: 600;
-    border-bottom: 1px solid #bfbfbf;
     
 }
 
