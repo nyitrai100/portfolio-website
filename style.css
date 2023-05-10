@@ -1,30 +1,90 @@
 @import url();
 
-@keyframes example {
+@keyframes first-icon {
     0%   {display: none;}
-    15%   {color:grey; left:0px; top:0px;}
-    25%  {color:orange; left:100px; top:0px;}
-    50%  {color:rgb(255, 255, 0); left:100px; top:100px;}
-    75%  {color:blue; left:0px; top:100px;}
-    100% {color:rgba(0, 0, 0, 0.237); left:0px; top:0px;}
+    15%   {color:grey; left:-250px;}
+    25%  {color:orange; left:-150px;}
+    50%  {color:rgb(255, 255, 0); left:-100px;}
+    75%  {color:blue; left:-50px;}
+    100% {color:rgba(0, 0, 0, 0.237); left:0px;}
+  }
+@keyframes middle-icons {
+    0%   {display: none;}
+    15%   {color:grey; top:-250px;}
+    25%  {color:orange; top:-150px;}
+    50%  {color:rgb(255, 255, 0); top:-100px;}
+    75%  {color:blue; top:-50px;}
+    100% {color:rgba(0, 0, 0, 0.237); top:0px;}
+  }
+@keyframes last-icon {
+    0%   {display: none;}
+    15%   {color:grey; right:-270px;}
+    25%  {color:orange; right:-150px;}
+    50%  {color:rgb(255, 255, 0); right:-100px;}
+    75%  {color:blue; right:-50px;}
+    100% {color:rgba(0, 0, 0, 0.237); right:0px;}
   }
 
-
-
+.top-border-line{
+    border-top: 2px solid white;
+}
+.skill-position{
+    margin-top: -100px;
+    opacity: 5;
+    border: 2px solid white;
+    z-index: 3;
+}
 .skill{
     color: white;
     border-radius: 20px;
     cursor: pointer;
     width: 60%;
     margin-left: 20%;
-
+}
+#html{
     width: 100px;
     height: 100px;
     position: relative;
     color: white;
-    animation-name: example;
+    animation-name: first-icon;
     animation-duration: 4s;
-    animation-direction: reverse;
+    animation-direction: normal;
+}
+#css{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    color: white;
+    animation-name: middle-icons;
+    animation-duration: 4s;
+    animation-direction: normal;
+}
+#javascript{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    color: white;
+    animation-name: middle-icons;
+    animation-duration: 4s;
+    animation-direction: normal;
+}
+#php{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    color: white;
+    animation-name: middle-icons;
+    animation-duration: 4s;
+    animation-direction: normal;
+}
+#bootstrap{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    color: white;
+    animation-name: last-icon;
+    animation-duration: 4s;
+    animation-direction: normal;
 }
 #html:hover{
     color: grey;
@@ -42,7 +102,7 @@
     color: purple;
 }
 .bg-color{
-    background-color: rgba(0, 0, 0, 0.237);
+    background-color: rgba(0, 0, 0, 0.971);
 }
 
 .contact-title{
