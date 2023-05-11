@@ -779,6 +779,14 @@ form .button-area{
     display: none;
 }
 
+/* footer */
+
+.copyrights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media(max-width: 600px){
     .wrapper header{

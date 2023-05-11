@@ -1,4 +1,5 @@
 //you have to upload this code on live server, wont work on local host!
+//contact form starts
 
 const form = document.querySelector("form"),
 statusTxt = form.querySelector(".button-area span");
@@ -31,6 +32,7 @@ form.onsubmit = (e) =>{
     xhr.send(formData);
 }
 
+//contact form ends
 
 // the header JS
 
