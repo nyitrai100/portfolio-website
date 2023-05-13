@@ -66,4 +66,9 @@ function sendEmail(){
                             
     );
   
+  };
+
+  //alert boxes
+  function myFunction() {
+    alert("This website is not available");
   }
