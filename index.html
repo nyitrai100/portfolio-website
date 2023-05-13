@@ -109,9 +109,9 @@
     <!-- Skills-ends -->
     <!-- Skills-text-starts-->
 <div class="container mb-5">
-  <div class="row">
+  <div class="row" id="col-position">
     <div class="col" id="blackhole-col">
-      <img src="./halftone10.svg"  id="blackhole" class="ms-5 rotate" alt="blackhole"  >
+      <img src="./img/halftone10.svg"  id="blackhole" class="ms-5 rotate" alt="blackhole"  >
     </div>
     <div class="col">
       <h1 class="mb-5" style="color:white;">Skills</h1>
@@ -143,10 +143,10 @@
 <!-- about-label ends -->
 
 <!-- about-page-start -->
-<div class="container-fluid">
+<div class="container-fluid" >
 
     <div class="container-fluid text-center">
-        <div class="row d-flex align-items-center">
+        <div class="row d-flex align-items-center" id="about-row">
           <div class="col">
             <p class="text-light">Hi there! My name is Bence Nyitrai, and I'm a Web Programming student with a passion for Web development. 
 
@@ -159,8 +159,8 @@
                 Thanks for visiting my portfolio, and I look forward to connecting with you soon!</p>
                 
             </div>
-          <div class="col cover">
-            <img class="shadow-sm  mb-5 bg-color rounded ms-4" src="/cover.jpg"  class="ps-5" alt="cover">
+          <div class="col cover rotate-about-pic">
+            <img class="shadow-sm  mb-5 bg-color rounded ms-4" src="./img/cover copy.jpg"  class="ps-5 " alt="cover">
           </div>
         </div>
       </div>
@@ -174,19 +174,19 @@
 <!-- project-label ends -->
 
 <!-- my-projects starts -->
-<div class="container pb-5">
-    <div class="row ps-4">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="container pb-5" >
+    <div class="row ps-4" >
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="project-position" >
             <div class="col">
               <div class="card h-100">
-                <video src="./real-estate-video.mp4" class="object-fit-cover" autoplay loop muted style="height:55%;"></video>
-                <div class="card-body" style="height: 45vh;">
+                <video src="./videos/real-estate-video.mp4" class="object-fit-cover card-video" autoplay loop muted></video>
+                <div class="card-body">
                   <h5 class="card-title pt-2">Real-estate website</h5><hr>
                   <p class="card-text pt-1">
                     My first bigger project with University<br>
                     Used technology:<br>
                     HTML, CSS, JavaScript</p>
-                    <br><p class="button"><button class="btn btn-primary d-flex " href="#">View</button></p>
+                    <br><p class="button" id="first-button"><button class="btn btn-primary d-flex " href="#">View</button></p>
                 </div>
                 <!-- <div class="card-footer">
                   <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -195,7 +195,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <video src="./antique-video.mp4" class="object-fit-cover" autoplay loop muted style="height:55%;"></video>
+                <video src="./videos/antique-video.mp4" class="object-fit-cover card-video" autoplay loop muted></video>
                 <div class="card-body">
                   <h5 class="card-title pt-2">Antique website</h5><hr>
                   <p class="card-text pt-1">
@@ -203,7 +203,7 @@
                     Used technology:<br>
                     HTML, CSS, JavaScript, JQuery,
                   </p>
-                  <br><p class="button"> <button class="btn btn-primary d-flex" onclick="window.location.href='https://serene-marshmallow-150d24.netlify.app/?fbclid=IwAR2evYV3m4Tzx0yBR9VETzMhBz2a1x96E1MvwW_fBZbmNuVVtR9EwJZIlic';"> View </button></p>
+                  <br><p class="button" id="middle-button"> <button class="btn btn-primary d-flex" onclick="window.location.href='https://serene-marshmallow-150d24.netlify.app/?fbclid=IwAR2evYV3m4Tzx0yBR9VETzMhBz2a1x96E1MvwW_fBZbmNuVVtR9EwJZIlic';"> View </button></p>
                  
                 </div>
                 <!-- <div class="card-footer">
@@ -213,7 +213,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <video src="./calculator.mp4" class="object-fit-cover" autoplay loop muted style="height:55%;"></video>
+                <video src="./videos/calculator.mp4" class="object-fit-cover card-video" autoplay loop muted></video>
                 <div class="card-body">
                   <h5 class="card-title pt-2">Calculator</h5><hr>
                   <p class="card-text pt-1" >
@@ -221,7 +221,7 @@
                     Used technology:<br>
                      HTML, CSS, JavaScript, ChartJS,<br>
                     Project: Investment Calculator
-                    <br><p class="button"> <button class="btn btn-primary d-flex" onclick="window.location.href='https://www.mascap.group';"> View </button></p>
+                    <br><p class="button" id="last-button"> <button class="btn btn-primary d-flex" onclick="window.location.href='https://www.mascap.group';"> View </button></p>
                 </div>
                 <!-- <div class="card-footer">
                   <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -239,12 +239,12 @@
   
 </div>
 <!-- extra div ends -->
-
+<div class="contact-title bg-dark text-light pt-5 border-top" id="Contact">Contact with me</div>
 <!-- contact starts -->
-<div class="bg-dark text-light pt-5 border-top"  id="Contact">
+<div class="bg-dark text-light pt-5" >
 
         <div class="wrapper pt-5 bg-dark">
-          <header class="contact-title">Contact with me</header>
+          
             <form action ="#" class="contact-form">
                 <div class="dbl-field">
                     <div class="field">

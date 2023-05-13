@@ -57,6 +57,10 @@
     }
   }
 
+
+
+ 
+
 .top-border-line{
     border-top: 2px solid white;
 }
@@ -140,7 +144,9 @@ img#blackhole{
 }
 
 .contact-title{
-    margin-top: -20px;
+    margin-top: -30px;
+    padding-left: 40px;
+    font-size: 25px;
 }
 
 .button{
@@ -151,13 +157,10 @@ img#blackhole{
 
 .description{
     color:white;
-    /* background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh; */
     
 }
+
+
 
 /* contact form starts */
 
@@ -167,7 +170,6 @@ img#blackhole{
     display: flex;
     justify-content: center;
     width: 100vw;
-    margin-left:-80px;
 }
 
 .wrapper header{
@@ -267,6 +269,12 @@ form .button-area{
 .cover img{
     width:550px;
 }
+.card-body{
+    height: 45vh;
+}
+.card-video{
+    height:55%;
+}
 
 /* footer */
 
@@ -277,7 +285,10 @@ form .button-area{
 }
 
 
-@media(max-width: 600px){
+/* mediaquierys */
+
+
+@media(max-width: 430px){
     .wrapper header{
         text-align: center;
     }
@@ -313,12 +324,9 @@ form .button-area{
         display: none;
     }
 
-    #bootstrap-col{
-        display: none;
-    }
 
     #blackhole-col{
-        margin-left: -50px;
+        margin-left: -15vw;
     }
 
     img#blackhole{
@@ -356,20 +364,162 @@ form .button-area{
         width:300px;
     }
     .contact-title{
-        margin-left: 150px;
-        margin-top: -90px;
-        padding-left: 20px;
-        height: 100px;
+       display: flex;
+       justify-content: center;
+       padding-left: 0px;
         
         
     }
-    .wrapper form {
-        margin-left: -60px;
-        }
 
     .dbl-field .field{
         height: 50px;
         width: 200px;
         position: relative;
     }
+
+    .card-body{
+        height: 75vh;
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+    .card-text{
+        font-size: 0.8rem;
+    }
+    
+    #last-button{
+        padding-top: 20px;
+    }
 }
+
+
+@media(min-width: 374px){
+    .card-body{
+        height: 65vh;
+    }
+    .cover{
+        margin-left: -3vw;
+    }
+    #blackhole-col{
+        margin-left: -5vw;
+    }
+   
+}
+
+@media(min-width: 414px){
+    .card-body{
+        height: 60vh;
+    }
+    #blackhole-col{
+        margin-left: 0.5vw;
+    }
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .card-text{
+        font-size: 1rem;
+    }
+   
+}
+
+@media(min-width: 413px ) and (max-width: 1000px){
+#about-row{
+    display: flex;
+    flex-direction: column;
+}
+
+#col-position{
+    display: flex;
+    flex-direction: column;
+}
+
+img#blackhole{
+    width: 325px;
+}
+
+}
+
+
+@media(max-width: 991px ){
+    #bootstrap-col{
+        display: none;
+    }
+}
+
+@media(min-width: 768px ) and (max-width: 1192px){
+    .card-body{
+        height: 60vh;
+    }
+    .card-video{
+        height:40%;
+    }
+    #middle-button{
+        margin-top:-25px;
+    }
+    #first-button{
+        margin-top: 0px;
+    }
+}
+
+@media(min-width: 994px ) and (max-width: 1192px){
+
+    .card-body{
+        height: 35vh;
+    }
+
+    #first-button{
+        margin-top:-25px;
+    }
+
+}
+
+
+@media(min-width: 443px ) and (max-width: 1200px){
+    @keyframes first-icon {
+        0%   {display: none;}
+        15%   {color:grey; left:-350px;}
+        25%  {color:orange; left:-150px; }
+        50%  {color:rgb(255, 255, 0); left:-100px;}
+        75%  {color:blue; left:-50px;}
+        100% {color:rgba(0, 0, 0, 0.237); left:-25px; }
+      }
+    @keyframes second-icon {
+        0%   {display: none;}
+        15%  {color:grey; left:-450px;}
+        25%  {color:orange; left:-150px; }
+        50%  {color:rgb(255, 255, 0); left:-100px;}
+        75%  {color:blue; left:-50px;}
+        100% {color:rgba(0, 0, 0, 0.237); left:-25px;}
+      }
+    @keyframes third-icon {
+        0%   {display: none;}
+        15% {color:grey; left:-650px;}
+        25%  {color:orange; left:-450px; }
+        50%  {color:rgb(255, 255, 0); left:-250px;}
+        75%  {color:blue; left:-150px;}
+        100% {color:rgba(0, 0, 0, 0.237); left:-25px;}
+      }
+    @keyframes fourth-icon {
+        0%   {display: none;}
+        15% {color:grey; left:-850px;}
+        25%  {color:orange; left:-650px; }
+        50%  {color:rgb(255, 255, 0); left:-350px;}
+        75%  {color:blue; left:-150px;}
+        100% {color:rgba(0, 0, 0, 0.237); left:-25px;}
+      }
+    @keyframes last-icon {
+        0%   {display: none;}
+        15%  {color:grey; left:-1050px;}
+        25%  {color:orange; left:-850px; }
+        50%  {color:rgb(255, 255, 0); left:-450px;}
+        75%  {color:blue; left:-250px;}
+        85%  {color:rgba(0, 0, 0, 0.237); left:-225px;}
+        90%  {color:rgba(0, 0, 0, 0.237); left:-125px;}
+        100% {color:rgba(0, 0, 0, 0.237); left:-25px;}
+      }
+
+      #blackhole-col{
+        display: none;
+      }
+}
+
