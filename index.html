@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleheader.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -21,14 +22,15 @@
 </div>
 <!-- loader ends -->
 <!-- navbar starts -->
-<div class="contentFixed">
+<div class="contentFixed" id="Home">
         <h1 class="headerTitle"><img src="img/icons8-b-67.png" class="logo"> Nyitrai</h1>
     <nav class="menu" id="siteNav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="news.html">About</a></li>
-            <li><a href="contact.html">Projects</a></li>
-            <li><a href="about.html">Contact</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
 </div>
@@ -42,12 +44,14 @@
         <div class="glitchit"></div>
         <div class="glitchit"></div>
     </div>
+  
  <!-- glitch starts -->
  <!-- title starts -->
     <div class="contentSection">
         <h2 class="contentTitle"><span>Web</span> Developer</h2>
         <p class="contentText">
             My proficiency involves utilizing multiple programming languages and tools to design dynamic and user-friendly websites.</p>
+</div>
 </div>
  <!-- title ends -->
 
@@ -56,7 +60,7 @@
 <!-- header-end -->
 <Main class="bg-dark pt-5 top-border-line">
     <!-- Skills-starts -->
-    <div class="container text-center shadow-lg p-3 rounded bg-color skill-position" style="margin-bottom: 80px;" >
+    <div class="container text-center shadow-lg p-3 rounded bg-color skill-position" style="margin-bottom: 80px;"  id="Skills">
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3" >
           <div class="col">
             <div class="p-3 skill" id="html">
@@ -90,7 +94,7 @@
                   <label for="PHP" class="ps-1" style="color:white">PHP</label>
             </div>
           </div>
-          <div class="col">
+          <div class="col" id="bootstrap-col">
             <div class="p-3 skill" id="bootstrap">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
                     <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
@@ -106,8 +110,8 @@
     <!-- Skills-text-starts-->
 <div class="container mb-5">
   <div class="row">
-    <div class="col">
-      <img src="./halftone10.svg" class="ms-5 rotate" style="width: 400px; margin-top: -10px;" alt="blackhole">
+    <div class="col" id="blackhole-col">
+      <img src="./halftone10.svg"  id="blackhole" class="ms-5 rotate" alt="blackhole"  >
     </div>
     <div class="col">
       <h1 class="mb-5" style="color:white;">Skills</h1>
@@ -133,7 +137,7 @@
 
 
 <!-- about-label starts -->
-<div class="container-fluid border-top">
+<div class="container-fluid border-top About" id="About" >
     <h1 class="ps-3 text-light" style="padding-top: 50px;">About me</h1>
 </div>
 <!-- about-label ends -->
@@ -155,8 +159,8 @@
                 Thanks for visiting my portfolio, and I look forward to connecting with you soon!</p>
                 
             </div>
-          <div class="col">
-            <img class="shadow-sm  mb-5 bg-color rounded ms-4" src="/IMG-20230402-WA0035(1).jpg"  style="width:550px;" class="ps-5" alt="cover">
+          <div class="col cover">
+            <img class="shadow-sm  mb-5 bg-color rounded ms-4" src="/cover.jpg"  class="ps-5" alt="cover">
           </div>
         </div>
       </div>
@@ -164,8 +168,8 @@
 <!-- about-page-end -->
 
 <!-- project-label starts -->
-<div class="container-fluid border-top">
-    <h1 class="pt-5 pb-5 ps-3 text-light">My Projects:</h1>
+<div  class="container-fluid border-top" >
+    <h1 class="pt-5 pb-5 ps-3 text-light" id="Projects">My Projects:</h1>
 </div>
 <!-- project-label ends -->
 
@@ -175,7 +179,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
-               <!-- video -->
+                <video src="./real-estate-video.mp4" class="object-fit-cover" autoplay loop muted style="height:55%;"></video>
                 <div class="card-body" style="height: 45vh;">
                   <h5 class="card-title pt-2">Real-estate website</h5><hr>
                   <p class="card-text pt-1">
@@ -191,7 +195,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-               <!-- video -->
+                <video src="./antique-video.mp4" class="object-fit-cover" autoplay loop muted style="height:55%;"></video>
                 <div class="card-body">
                   <h5 class="card-title pt-2">Antique website</h5><hr>
                   <p class="card-text pt-1">
@@ -209,7 +213,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <!-- video -->
+                <video src="./calculator.mp4" class="object-fit-cover" autoplay loop muted style="height:55%;"></video>
                 <div class="card-body">
                   <h5 class="card-title pt-2">Calculator</h5><hr>
                   <p class="card-text pt-1" >
@@ -237,11 +241,11 @@
 <!-- extra div ends -->
 
 <!-- contact starts -->
-<div class="bg-dark text-light pt-5 border-top" >
+<div class="bg-dark text-light pt-5 border-top"  id="Contact">
 
         <div class="wrapper pt-5 bg-dark">
-            <header class="contact-title">Contact with me</header>
-            <form action ="#">
+          <header class="contact-title">Contact with me</header>
+            <form action ="#" class="contact-form">
                 <div class="dbl-field">
                     <div class="field">
                         <input type="text" name="name" placeholder="Enter your name">
