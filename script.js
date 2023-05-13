@@ -1,5 +1,14 @@
+// when refresh go up to the top of the page
 
-
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// }
+//reload
+function gototab(reload)
+   {
+    window.location.href = 'index.html#Home';
+    window.location.reload(true);
+   } 
 // the header JS
 
 
@@ -37,3 +46,4 @@ function sendEmail(){
   function myFunction() {
     alert("This website is not available");
   }
+
