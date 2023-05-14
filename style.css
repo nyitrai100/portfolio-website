@@ -707,6 +707,18 @@ body {
 .inherit{
     color: inherit;
 }
+
+.padding-top{
+    padding-top: 50px;
+}
+
+.line-h{
+    line-height: 37px;
+}
+
+.extra-div-height{
+    height: 20vh;
+}
 /* font-family  and card in the project section starts */
 
 .font-family{
