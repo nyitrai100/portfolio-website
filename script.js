@@ -1,9 +1,4 @@
 
-// when refresh go up to the top of the page
-
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// }
 //reload
 function gototab(reload)
    {
@@ -48,3 +43,20 @@ function sendEmail(){
     alert("This website is not available");
   }
 
+
+
+
+  /*arrow*/
+
+const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY >= 50){
+        header.classList.add("active");
+        backTopBtn.classList.add("active");
+    } else {
+        header.classList.remove("active");
+        backTopBtn.classList.remove("active");
+    }
+});
