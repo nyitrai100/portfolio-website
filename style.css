@@ -58,7 +58,6 @@
   }
 
 
-
  
 
 .top-border-line{
@@ -160,6 +159,29 @@ img#blackhole{
     
 }
 
+/* Back to the Top arrow starts*/
+
+.back-top-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition:  0.25s ease;
+    z-index: 4;
+}
+
+.back-top-btn.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-10px);
+}
+/* Back to the Top arrow ends*/
 
 /* CSS for the Header stars */
 
@@ -177,7 +199,7 @@ html {
     background: #1d2121;
 }
 body {
-    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    /* font-family: "Segoe UI", Helvetica, Arial, sans-serif; */
     min-height: 100vh;
     color: #57585c;
     color: var(--color-text);
@@ -294,6 +316,7 @@ body {
     font-size: 0.8em;
     font-weight: bold;
     transition: all 0.5s;
+    font-family: 'Playfair Display', serif;
     /* border: 1px solid white; */
 }
 #siteNav ul li a:hover {
@@ -324,7 +347,8 @@ body {
     color: black;
 }
 .contentText {
-    font-family: 'IM Fell English', serif;
+    /* font-family: 'IM Fell English', serif; */
+    font-family: 'Handlee', cursive;
     margin-top: -2vw;
     font-size: 1.5em;
     max-width: 600px;
@@ -678,7 +702,9 @@ body {
 
 
 
-
+.font-family{
+    font-family: 'Handlee', cursive;
+}
 /* contact form starts */
 
 .wrapper{
@@ -687,6 +713,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100vw;
+    font-family: 'Handlee', cursive;
 }
 
 .wrapper header{
