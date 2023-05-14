@@ -696,7 +696,17 @@ body {
 }
 
 /* CSS for the Header ends */
+.bottom{
+    margin-bottom: 80px;
+}
 
+.white{
+    color:white;
+}
+
+.inherit{
+    color: inherit;
+}
 /* font-family  and card in the project section starts */
 
 .font-family{
