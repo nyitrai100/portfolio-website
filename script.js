@@ -1,3 +1,7 @@
+//pop up function 
+
+
+
 
 //reload
 function gototab(reload)
@@ -15,6 +19,19 @@ window.addEventListener("load", function(event) {
     document.body.classList.add('imgloaded');
 });
 
+// alert
+function showCustomAlert() {
+  var message = "Welcome to my old Portfolio website! Would you like to visit my new Portfolio website? If yes click the Ok.";
+  var confirmation = confirm(message);
+
+  if (confirmation) {
+      // Redirect to the new website
+      window.location.href = "https://lively-maamoul-d85ea1.netlify.app";
+  }
+}
+
+// Call the showCustomAlert function when the page loads (you can call it on any event)
+showCustomAlert();
 
 //send email
 function sendEmail(){
